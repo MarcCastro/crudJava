@@ -1,4 +1,13 @@
 # crudJava
 CRUD desenvolvido em Java com utilização do Microsoft SQL Server
 
-Script para a criação do banco de dados
+Script para a criação do banco de dados:
+
+CREATE DATABASE Crud
+
+USE Crud
+
+/*TABELA CLIENTE*/
+CREATE TABLE CLIENTE(COD_CLIENTE INT NOT NULL IDENTITY(1, 1), NOME_CLIENTE VARCHAR(30), NASCIMENTO_CLIENTE VARCHAR(10), CPF_CLIENTE VARCHAR(14))
+
+ALTER TABLE CLIENTE ADD CONSTRAINT PK_COD_CLIENTE PRIMARY KEY(COD_CLIENTE)
